@@ -22,9 +22,12 @@ nav {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     border: solid 3px rgb(236, 233, 22);
-    padding: 5px 10px
+    padding: 5px 10px;
 }
 
+.letramenu:hover {
+    background-image: linear-gradient(to bottom, rgb(14, 12, 12) , rgb(255, 179, 1));
+}
 main {
     background-image: url(https://static.vecteezy.com/system/resources/previews/001/544/378/large_2x/black-elegant-criss-cross-background-free-vector.jpg);
     background-size: contain;
@@ -37,6 +40,11 @@ h1 {
     background-size: cover;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: aliceblue;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
 }
 
 #h1index {
@@ -143,6 +151,11 @@ footer {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
+}
+
+.hoverfooter:hover {
+    transition: all 1s;
+    transform: scale(1.5,1.5);
 }
 
 .maingaleria img {
@@ -279,4 +292,29 @@ footer {
     .noti3{
         margin-bottom: 20px
     }
+    
+}
+@keyframes efecto1 {
+    0%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 1%, rgb(255, 179, 1));}
+    5%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 10%, rgb(255, 179, 1))}
+    10%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 20%, rgb(255, 179, 1))}
+    15%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 30%, rgb(255, 179, 1))}
+    20%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 40%, rgb(255, 179, 1))}
+    25%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 50%, rgb(255, 179, 1))}
+    30%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 60%, rgb(255, 179, 1))}
+    35%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 70%, rgb(255, 179, 1))}
+    40%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 80%, rgb(255, 179, 1))}
+    45%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 90%, rgb(255, 179, 1))}
+    50%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 100%, rgb(255, 179, 1))}
+    55%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 90%, rgb(255, 179, 1))}
+    60%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 80%, rgb(255, 179, 1))}
+    65%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 70%, rgb(255, 179, 1))}
+    70%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 60%, rgb(255, 179, 1))}
+    75%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 50%, rgb(255, 179, 1))}
+    80%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 40%, rgb(255, 179, 1))}
+    85%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 30%, rgb(255, 179, 1))}
+    90%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 20%, rgb(255, 179, 1))}
+    95%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 10%, rgb(255, 179, 1))}
+    100%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 1%, rgb(255, 179, 1))}
+
 }
