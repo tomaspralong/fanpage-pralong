@@ -100,41 +100,11 @@ p {
 #ultimop {
     margin-bottom: 0%;
 }
-/*
-.mainindex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 300px 1170px 200px;
-    grid-template-areas:
-        "video video"
-        "biografia biografia"
-        "carreramusical sobreestilo"
-        "vidapriv vidapriv";
-    grid-column-gap: 30px;
-    
-}
 
 #sectionvideo {
-    grid-area: video;
     margin-top: 20px;
 }
 
-.biografia {
-    grid-area: biografia;
-}
-
-.carreramusical {
-    grid-area: carreramusical;
-}
-
-.sobreestilo {
-    grid-area: sobreestilo;
-}
-
-.vidapriv {
-    grid-area: vidapriv;
-}
-*/
 footer {
     background-color: rgb(14, 12, 12);
     background-image: linear-gradient(to bottom, rgb(14, 12, 12) 79%, rgb(255, 179, 1));
@@ -230,82 +200,15 @@ footer {
 .mainnoti img {
     border: solid 5px rgb(255, 179, 1);
 }
-/*
-.mainnoti {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "negro noti1 negro2"
-        "negro noti2 negro2"
-        "negro noti3 negro2";
-    grid-column-gap: 20px;
-
-}
-
-.noti1 {
-    grid-area: noti1;
-}
-
-.noti2 {
-    grid-area: noti2;
-}
-
-.noti3 {
-    grid-area: noti3;
-}
 
 .negro {
-    grid-area: negro;
     background-color: #37353b
 }
 
-.negro2 {
-    grid-area: negro2;
-    background-color: #37353b
-}
-*/
-.negro {
-    background-color: #37353b
-}
-
-.negro2 {
-    background-color: #37353b
-}
 @media screen and (max-width: 480px) {
     #sectionvideo {
         display: none;
     }
-    /*
-    .mainindex{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 650px 1fr 400px 270px;
-        grid-template-areas:
-            "biografia"
-            "carreramusical"
-            "sobreestilo"
-            "vidapriv";
-    }
-    .mainnoti{
-        display: grid;
-    text-align: center;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "noti1"
-        "noti2"
-        "noti3";
-    grid-column-gap: 20px;
-    }
-    .noti1{
-        margin-top: 20px;
-    }
-    .noti3{
-        margin-bottom: 20px
-    }
-    */
 }
 @keyframes efecto1 {
     0%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 1%, rgb(255, 179, 1));}
