@@ -1,321 +1,178 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 nav {
-    background-color: rgb(14, 12, 12);
+  background-color: rgb(14, 12, 12);
 }
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 70px;
+nav .menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  margin: 0;
+  padding: 0%;
 }
-
-.letramenu {
-    color: rgb(236, 233, 22);
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    border: solid 3px rgb(236, 233, 22);
-    padding: 5px 10px;
+nav .letramenu {
+  color: rgb(236, 233, 22);
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  border: solid 3px rgb(236, 233, 22);
+  padding: 5px 10px;
 }
-
-.letramenu:hover {
-    background-image: linear-gradient(to bottom, rgb(14, 12, 12) , rgb(255, 179, 1));
-}
-main {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/001/544/378/large_2x/black-elegant-criss-cross-background-free-vector.jpg);
-    background-size: contain;
-    color: aliceblue;
+nav .letramenu:hover {
+  background-image: linear-gradient(to bottom, rgb(14, 12, 12), rgb(255, 179, 1));
 }
 
 h1 {
-    text-align: center;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
-    background-size: cover;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
-    animation-name: efecto1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1.5s;
-    animation-delay: 0.3s;
-}
-
-#h1index {
-    text-align: center;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
-    background-size: cover;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
+  text-align: center;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: aliceblue;
+  animation-name: efecto1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: underline;
-    color: rgb(255, 179, 1);
-    background-color: rgb(14, 12, 12);
-    font-size: 30px;
-    margin-top: 50px;
-    border: solid 3px rgb(255, 179, 1);
-    padding: 5px 10px
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+  color: rgb(255, 179, 1);
+  background-color: rgb(14, 12, 12);
+  font-size: 30px;
+  margin-top: 50px;
+  border: solid 3px rgb(255, 179, 1);
+  padding: 5px 10px;
 }
 
-.indiceitem {
-    color: rgb(255, 179, 1);
+#h1index {
+  text-align: center;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: aliceblue;
 }
 
-#sectionvideo {
-    text-align: center;
-
-
+main {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/544/378/large_2x/black-elegant-criss-cross-background-free-vector.jpg);
+  background-size: contain;
+  color: aliceblue;
 }
-
-#video {
-    border: solid 5px rgb(255, 179, 1);
+main p {
+  font-size: larger;
 }
 
 .mainindex p {
-    font-weight: bold;
+  font-weight: bold;
 }
-
-.subtitulobio {
-    color: rgb(236, 233, 22);
-    font-size: 25px;
+.mainindex #sectionvideo {
+  text-align: center;
+  margin-top: 20px;
 }
-
-p {
-    font-size: larger;
-    
+.mainindex #video {
+  border: solid 5px rgb(255, 179, 1);
 }
-
-#ultimop {
-    margin-bottom: 0%;
+.mainindex .subtitulobio {
+  color: rgb(236, 233, 22);
+  font-size: 25px;
 }
-
-.mainindex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 300px 1170px 200px;
-    grid-template-areas:
-        "video video"
-        "biografia biografia"
-        "carreramusical sobreestilo"
-        "vidapriv vidapriv";
-    grid-column-gap: 30px;
-    
-}
-
-#sectionvideo {
-    grid-area: video;
-    margin-top: 20px;
-}
-
-.biografia {
-    grid-area: biografia;
-}
-
-.carreramusical {
-    grid-area: carreramusical;
-}
-
-.sobreestilo {
-    grid-area: sobreestilo;
-}
-
-.vidapriv {
-    grid-area: vidapriv;
+.mainindex #ultimop {
+  margin-bottom: 0%;
 }
 
 footer {
-    background-color: rgb(14, 12, 12);
-    background-image: linear-gradient(to bottom, rgb(14, 12, 12) 79%, rgb(255, 179, 1));
+  background-color: rgb(14, 12, 12);
+  background-image: linear-gradient(to bottom, rgb(14, 12, 12) 79%, rgb(255, 179, 1));
 }
-
-.menufooter {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 40px;
+footer .menufooter {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  padding: 0;
+  margin: 0;
 }
-
-.letrafooter {
-    color: rgb(255, 179, 1);
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+footer .letrafooter {
+  color: rgb(255, 179, 1);
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
 }
-
-.hoverfooter:hover {
-    transition: all 1s;
-    transform: scale(1.5,1.5);
+footer .hoverfooter:hover {
+  transition: all 1s;
+  transform: scale(1.5, 1.5);
 }
 
 .maingaleria img {
-    border: solid 5px rgb(255, 179, 1);
-    margin-top: 50px;
+  border: solid 5px rgb(255, 179, 1);
+  margin-top: 50px;
 }
-
-.familiaft1 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
+.maingaleria .familiaft1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
-
-.familiaft2 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
+.maingaleria .familiaft2 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
 }
-
-.artistaft1 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
+.maingaleria .artistaft1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
-
-.artistaft2 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
-.mainalbum h2 {
-    margin-bottom: 20px;
+.maingaleria .artistaft2 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 .mainalbum {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 530px;
-    grid-template-areas:
-        "mayoresexitos sencillos"
-        "albums albums";
-    grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 530px;
+  grid-template-areas: "mayoresexitos sencillos" "albums albums";
+  grid-column-gap: 30px;
 }
-
-.mayoresexitos {
-    grid-area: mayoresexitos;
+.mainalbum h2 {
+  margin-bottom: 20px;
 }
-
-.section1 ol {
-    height: 1170px;
-    overflow: auto;
+.mainalbum .mayoresexitos {
+  grid-area: mayoresexitos;
 }
-
-.albums {
-    grid-area: albums;
+.mainalbum .section1 ol {
+  height: 1170px;
+  overflow: auto;
 }
-
-.sencillos {
-    grid-area: sencillos;
+.mainalbum .albums {
+  grid-area: albums;
 }
-
-.mainnoti img {
-    border: solid 5px rgb(255, 179, 1);
+.mainalbum .sencillos {
+  grid-area: sencillos;
 }
 
 .mainnoti {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "negro noti1 negro2"
-        "negro noti2 negro2"
-        "negro noti3 negro2";
-    grid-column-gap: 20px;
-
+  border: solid 5px rgb(255, 179, 1);
+}
+.mainnoti .negro {
+  background-color: #37353b;
 }
 
-.noti1 {
-    grid-area: noti1;
-}
-
-.noti2 {
-    grid-area: noti2;
-}
-
-.noti3 {
-    grid-area: noti3;
-}
-
-.negro {
-    grid-area: negro;
-    background-color: #37353b
-}
-
-.negro2 {
-    grid-area: negro2;
-    background-color: #37353b
-}
-
-@media screen and (max-width: 480px) {
-    #sectionvideo {
-        display: none;
-    }
-    .mainindex{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 650px 1fr 400px 270px;
-        grid-template-areas:
-            "biografia"
-            "carreramusical"
-            "sobreestilo"
-            "vidapriv";
-    }
-    .mainnoti{
-        display: grid;
-    text-align: center;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "noti1"
-        "noti2"
-        "noti3";
-    grid-column-gap: 20px;
-    }
-    .noti1{
-        margin-top: 20px;
-    }
-    .noti3{
-        margin-bottom: 20px
-    }
-    
-}
-@keyframes efecto1 {
-    0%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 1%, rgb(255, 179, 1));}
-    5%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 10%, rgb(255, 179, 1))}
-    10%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 20%, rgb(255, 179, 1))}
-    15%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 30%, rgb(255, 179, 1))}
-    20%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 40%, rgb(255, 179, 1))}
-    25%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 50%, rgb(255, 179, 1))}
-    30%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 60%, rgb(255, 179, 1))}
-    35%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 70%, rgb(255, 179, 1))}
-    40%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 80%, rgb(255, 179, 1))}
-    45%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 90%, rgb(255, 179, 1))}
-    50%{ background-image: linear-gradient(to right, rgb(14, 12, 12) 100%, rgb(255, 179, 1))}
-    55%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 90%, rgb(255, 179, 1))}
-    60%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 80%, rgb(255, 179, 1))}
-    65%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 70%, rgb(255, 179, 1))}
-    70%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 60%, rgb(255, 179, 1))}
-    75%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 50%, rgb(255, 179, 1))}
-    80%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 40%, rgb(255, 179, 1))}
-    85%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 30%, rgb(255, 179, 1))}
-    90%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 20%, rgb(255, 179, 1))}
-    95%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 10%, rgb(255, 179, 1))}
-    100%{ background-image: linear-gradient(to left, rgb(14, 12, 12) 1%, rgb(255, 179, 1))}
-
-}
+/*# sourceMappingURL=style.css.map */
