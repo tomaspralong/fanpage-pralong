@@ -1,6 +1,30 @@
+@import"./base/extends";
+@import"./base/maps";
+@import"./base/mixin";
+
 *{
     margin: 0%;
     padding: 0%;
+}
+
+body{
+    overflow-x: hidden;
+  }
+  
+
+  h1{
+    text-align: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
@@ -16,31 +40,18 @@ nav {
     padding: 0%;
     }
     .letramenu {
-        color: rgb(236, 233, 22);
+        color: map-get($bordes, color);
+        border: map-get($bordes, border ); 
         text-decoration: none;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 30px;
-        border: solid 3px rgb(236, 233, 22);
         padding: 5px 10px;
     }
     .letramenu:hover {
         background-image: linear-gradient(to bottom, rgb(14, 12, 12) , rgb(255, 179, 1));
     }
 }
-h1{
-    text-align: center;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
-    background-size: cover;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
-    animation-name: efecto1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1.5s;
-    animation-delay: 0.3s;
-    padding: 0;
-    margin: 0;
-}
+
 h2 {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -51,13 +62,6 @@ h2 {
     margin-top: 50px;
     border: solid 3px rgb(255, 179, 1);
     padding: 5px 10px
-}
-#h1index {
-    text-align: center;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
-    background-size: cover;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
 }
 
 main {
@@ -81,6 +85,7 @@ main {
     #video {
         border: solid 5px rgb(255, 179, 1);
     }
+    
     .subtitulobio {
         color: rgb(236, 233, 22);
         font-size: 25px;
@@ -115,34 +120,25 @@ footer {
 }
 
 .maingaleria {
+    .titulogal{
+        margin-top: 20px;
+    }
     img {
         border: solid 5px rgb(255, 179, 1);
     margin-top: 50px;
     }
     .familiaft1 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
+        @extend %spacearound;
     }
     .familiaft2 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-evenly;
+        @include spaceevenly();
     }
     
     .artistaft1 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
+        @extend %spacearound;
     }
     .artistaft2 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-evenly;
+        @include spaceevenly();
     }
 }
 .mainalbum {
