@@ -141,7 +141,34 @@ footer {
         @include spaceevenly();
     }
 }
-
+.mainalbum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 530px;
+    grid-template-areas:
+        "mayoresexitos sencillos"
+        "albums albums";
+    grid-column-gap: 30px;
+    h2 {
+        margin-bottom: 20px;
+    }
+    .mayoresexitos {
+        grid-area: mayoresexitos;
+    }
+    
+    .section1 ol {
+        height: 1170px;
+        overflow: auto;
+    }
+    
+    .albums {
+        grid-area: albums;
+    }
+    
+    .sencillos {
+        grid-area: sencillos;
+    }
+}
 .mainnoti {
     img {
         border: solid 5px rgb(255, 179, 1);
