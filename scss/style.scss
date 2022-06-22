@@ -127,19 +127,7 @@ footer {
         border: solid 5px rgb(255, 179, 1);
     margin-top: 50px;
     }
-    .familiaft1 {
-        @extend %spacearound;
-    }
-    .familiaft2 {
-        @include spaceevenly();
-    }
-    
-    .artistaft1 {
-        @extend %spacearound;
-    }
-    .artistaft2 {
-        @include spaceevenly();
-    }
+  
 }
 .mainalbum {
     display: grid;
