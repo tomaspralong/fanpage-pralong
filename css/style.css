@@ -7,6 +7,16 @@ body {
   overflow-x: hidden;
 }
 
+.bodyindex {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bodynoti {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 h1 {
   text-align: center;
   background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-abstracta-grunge-azul-oscuro-amarillo_91128-1182.jpg?w=2000);
@@ -40,7 +50,7 @@ nav .letramenu {
   border: solid 3px rgb(236, 233, 22);
   text-decoration: none;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   padding: 5px 10px;
 }
 nav .letramenu:hover {
@@ -113,6 +123,8 @@ footer .hoverfooter:hover {
 
 .maingaleria .titulogal {
   margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .maingaleria img {
   border: solid 5px rgb(255, 179, 1);
@@ -125,6 +137,7 @@ footer .hoverfooter:hover {
   grid-template-rows: 1fr 530px;
   grid-template-areas: "mayoresexitos sencillos" "albums albums";
   grid-column-gap: 30px;
+  padding-left: 10px;
 }
 .mainalbum h2 {
   margin-bottom: 20px;
@@ -153,6 +166,11 @@ footer .hoverfooter:hover {
 @media screen and (max-width: 480px) {
   #sectionvideo {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #video {
+    width: 600px;
   }
 }
 @keyframes efecto1 {
